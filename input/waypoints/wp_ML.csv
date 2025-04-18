@@ -1,0 +1,7 @@
+origin,destination,latitude,longitude,altitude,waypoint_id,flight_mode
+UCM,LLNL,37.362472,-120.422582,65,ml_wp0,idle
+UCM,LLNL,37.362472,-120.422582,90,ml_wp1,hover_climb
+UCM,LLNL,37.65,-121.39,1500,ml_wp2,climb
+UCM,LLNL,37.74,-121.59,1500,ml_wp3,cruise
+UCM,LLNL,37.690756,-121.81912,150,ml_wp4,descent
+UCM,LLNL,37.690756,-121.81912,120,ml_wp5,hover_descent

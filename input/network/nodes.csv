@@ -1,0 +1,3 @@
+id,lat,lon,alt,name,init_ac_num,ac_composition,charger
+UCB,37.874212,-122.24916,260,Berkeley Vertiport,20,"{""joby_s4_2"": 20}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"
+UCD,38.531015,-121.791944,25,Davis Vertiport,20,"{""joby_s4_2"": 20}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"

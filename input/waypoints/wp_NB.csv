@@ -1,0 +1,14 @@
+origin,destination,latitude,longitude,altitude,waypoint_id,flight_mode
+NASA,UCB,37.421221,-122.057952,0,nd_wp0,idle
+NASA,UCB,37.421221,-122.057952,30,nd_wp1,hover_climb
+NASA,UCB,37.424049,-122.058513,100,nd_wp2,climb
+NASA,UCB,37.439434,-122.066561,300,nd_wp3,climb
+NASA,UCB,37.457348,-122.077247,600,nd_wp4,climb
+NASA,UCB,37.616128,-122.165738,600,nd_wp5,cruise
+NASA,UCB,37.787779,-122.338078,600,nd_wp6,cruise
+NASA,UCB,37.85723,-122.330773,800,nd_wp7,climb
+NASA,UCB,37.8668,-122.285427,800,nd_wp8,cruise
+NASA,UCB,37.870126,-122.261676,500,nd_wp9,descent
+NASA,UCB,37.872299,-122.249238,330,nd_wp10,descent
+NASA,UCB,37.873977,-122.249441,290,nd_wp11,descent
+NASA,UCB,37.873977,-122.249441,260,nd_wp12,hover_descent

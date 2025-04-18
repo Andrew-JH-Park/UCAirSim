@@ -1,0 +1,11 @@
+origin,destination,waypoints,capacity,wind_speed
+UCB,UCD,wp_BD,5,5.2
+UCD,UCB,wp_DB,5,4.9
+UCB,NASA,wp_BN,5,4.9
+NASA,UCB,wp_NB,5,4.9
+UCSC,NASA,wp_SN,5,4.9
+NASA,UCSC,wp_NS,5,4.9
+LLNL,UCB,wp_LB,5,4.9
+UCB,LLNL,wp_BL,5,4.9
+UCM,LLNL,wp_ML,5,4.9
+LLNL,UCM,wp_LM,5,4.9

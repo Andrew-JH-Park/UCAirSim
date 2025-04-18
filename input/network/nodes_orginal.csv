@@ -1,0 +1,7 @@
+id,lat,lon,alt,name,init_ac_num,ac_composition,charger
+UCB,37.874212,-122.24916,260,Berkeley Vertiport,5,"{""joby_s4_2"": 5}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"
+UCD,38.531015,-121.791944,25,Davis Vertiport,5,"{""joby_s4_2"": 5}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"
+NASA,37.421221,-122.057952,0,NASA Vertiport,5,"{""joby_s4_2"": 5}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"
+UCSC,36.992201,-122.054347,195,Santa Cruz Vertiport,5,"{""joby_s4_2"": 5}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"
+LLNL,37.690756,-121.81912,120,Livermore National Laboratory,5,"{""joby_s4_2"": 5}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"
+UCM,37.362472,-120.422582,65,Merced Vertiport,3,"{""joby_s4_2"":3}","{""charger_max_charge_rate"": 350, ""charger_efficiency"": 0.9}"

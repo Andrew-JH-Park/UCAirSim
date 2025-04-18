@@ -1,0 +1,14 @@
+origin,destination,latitude,longitude,altitude,waypoint_id,flight_mode
+UCB,UCD,37.874212,-122.24916,260,bd_wp0,idle
+UCB,UCD,37.874212,-122.24916,290,bd_wp1,hover_climb
+UCB,UCD,37.875284,-122.25021,330,bd_wp2,climb
+UCB,UCD,37.881278,-122.245911,500,bd_wp3,climb
+UCB,UCD,37.888229,-122.241075,600,bd_wp4,climb
+UCB,UCD,37.896211,-122.250755,600,bd_wp5,cruise
+UCB,UCD,37.951789,-122.307021,600,bd_wp6,cruise
+UCB,UCD,38.229132,-122.285932,600,bd_wp7,cruise
+UCB,UCD,38.384235,-122.09215,800,bd_wp8,climb
+UCB,UCD,38.525032,-121.808567,150,bd_wp9,descent
+UCB,UCD,38.530957,-121.795064,60,bd_wp10,descent
+UCB,UCD,38.531015,-121.791944,40,bd_wp11,descent
+UCB,UCD,38.531015,-121.791944,25,bd_wp12,hover_descent
