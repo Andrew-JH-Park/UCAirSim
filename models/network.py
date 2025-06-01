@@ -18,6 +18,7 @@ class UAMNetwork:
         self.vertiports = {}  # Stores Vertiport instances
         self.airspaces = {}  # Stores Airspace instances
         self.aircrafts = {}
+        self.initial_aircraft_allocation = {}  # node_id → expected aircraft count
         self.mission_profile = mission_profile
         self.load_network(nodes_df, edges_df, charger)
 
@@ -51,10 +52,16 @@ class UAMNetwork:
                     aircraft_num += 1
                     vertiport.park_aircraft(aircraft)
 
+                # save aircraft distribution (for aircraft repositioning)
+                self.initial_aircraft_allocation[row["id"]] = num
+
         # Load edges and initialize Airspaces
         for _, row in edges_df.iterrows():
             attributes = row.drop(["origin", "destination"]).to_dict()
-            waypoint_input_file = Path.joinpath(AIRSPACE_PATH, row["waypoints"] + ".csv")
+            wp_name = row["waypoints"]
+            waypoint_input_file = Path.joinpath(AIRSPACE_PATH, wp_name + ".csv")
+
+            flight_time = list(self.mission_profile[wp_name]['joby_s4_2']['accumulated time'])[-1]
 
             try:
                 waypoints = pd.read_csv(waypoint_input_file)
@@ -68,7 +75,7 @@ class UAMNetwork:
                 waypoints=waypoints,
                 mission_profile=self.mission_profile[row["waypoints"]]
             )
-            self.graph.add_edge(row["origin"], row["destination"], airspace=airspace, **attributes)
+            self.graph.add_edge(row["origin"], row["destination"], airspace=airspace, flight_time=flight_time,**attributes)
             self.airspaces[(row["origin"], row["destination"])] = airspace
 
     def update_network(self):
@@ -78,3 +85,7 @@ class UAMNetwork:
             # vertiport.check_demand()
             vertiport.update_passengers()
             vertiport.update_aircraft_soc()
+
+    def compute_itinerary(self, origin_node, destination_node):
+        itinerary = nx.shortest_path(self.graph, source=origin_node, target=destination_node, weight='flight_time')
+        return itinerary
